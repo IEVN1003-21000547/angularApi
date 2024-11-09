@@ -24,8 +24,9 @@
             </a>
             <p class="mb-3 font-normal text-gray-500 dark:text-gray-400"></p>
 
-            <app-temh [mensaje]="title"></app-temh>
+            <app-temh [mensaje]="title" (mensaje2)="recibirMensaje($event)" ></app-temh>
         </div>
+        <h3>evento: {{mensaje2}}</h3>
 
     </div>
 </div>

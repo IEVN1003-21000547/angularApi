@@ -10,4 +10,8 @@ import { TemhComponent } from "../temh/temh.component";
 })
 export class TempComponent {
   title: string = 'Saludo desde el componente padre'; // Inicialización de la propiedad
+  mensaje2:string=""
+  recibirMensaje(mensaje:string){
+    this.mensaje2=mensaje
+  }
 }
